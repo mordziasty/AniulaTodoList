@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+  <html data-ng-app = "app">
+<head>
+  <title> Angular Neoteric - $routeParams </title>
+  <link rel ="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css" />
+  <link rel ="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  <link href ="css/style.css" rel ="stylesheet" />
+</head>
+<body data-ng-controller="indexCtrl">
+<div class="container">
+  <nav class="navbar navbar-default" role="navigation">
+    <div class ="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#/">Lista Zadań</a>
+      </div>
+      <div class ="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class ="nav navbar-nav">
+          <li data-ng-class="getClass('/list')"><a href="#/list">Twoje zadania</a></li>
+          <li data-ng-class="getClass('/edit')"><a href="#/edit">Dodaj zadanie</a></li>
+          <li data-ng-class="getClass('/json')"><a href="#/json">JSON</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div data-ng-view=""></div>
+</div>
+<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular-route.js"></script>
+
+<script src="scripts/app.mdl.js"></script>
+<script src="scripts/app.rout.js"></script>
+<script src="scripts/index-ctrl.js"></script>
+<script src="scripts/core/list/list-ctrl.js"></script>
+<script src="scripts/core/edit/edit-ctrl.js"></script>
+
+<script src="scripts/common/directives/ng-date-picker.js"></script>
+<script src="scripts/common/services/todos-data.js"></script>
+<script src="scripts/common/services/categories-data.js"></script>
+<script src="scripts/common/filters/filters.js"></script>
+</body>
+</html>
