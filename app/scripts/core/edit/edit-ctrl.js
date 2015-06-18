@@ -10,9 +10,9 @@ app.controller('editCtrl', function ($scope, $location, categories) {
       'done': false,
       'type': $scope.formData.type,
       'estimates': $scope.formData.estimates,
-      'date': $scope.formDate.date
+      'date': $scope.formData.date
     });
-    $scope.formDate.newTodo = '';
-    $location.path('/list')
+
+    $location.path('/list');
   };
 });

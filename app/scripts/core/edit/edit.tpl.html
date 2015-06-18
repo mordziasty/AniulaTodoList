@@ -4,16 +4,16 @@
   </div>
   <div class="panel-body">
     <form name="f" data-ng-submit="addTodo()">
-      <label for="name">Nazwa:</label>
-      <textarea class="form-control" id="name" name="newTodo" data-ng-model="formData.newTodo" required></textarea>
+      <label for="title">Nazwa:</label>
+        <textarea class="form-control" id="title" name="newTodo" data-ng-model="formData.newTodo" required></textarea>
       <label for="type">Typ:</label>
-      <select class="form-control" id="type" name="type" data-ng-model="formData.type" data-ng-option="value.name for value in categories" required></select>
+        <select class="form-control" id="type" name="type" data-ng-model="formData.type" data-ng-options="value.name for value in categories" required></select>
       <label for="estimates">Estymowany czas:</label>
-      <select class="form-control" id="estimates" name="estimates" data-ng-model="formData.estimates" data-ng-option="value + 'h' for value in [] | rangeTime:9:true" required></select>
+        <select class="form-control" id="estimates" name="estimates" data-ng-model="formData.estimates" data-ng-options="value + 'h' for value in [] | rangeTime:9:true" ></select>
       <label for="text">Data:</label>
-      <input class="form-control" id="text" type="text" data-ng-model="formData.date" data-ng-data-picker="" name="date" required readonly="readonly">
+        <input class="form-control" id="text" type="text" data-ng-model="formData.date" data-ng-date-picker="" name="date" required readonly="readonly">
       <br />
-      <button class="btn btn-success" data-ng-disabled="f.$invalid">Add <span class="glyphicon glyphicon-ok"></span></button>
+      <button class="btn btn-success" data-ng-disabled="f.$invalid" ng-click="">Dodaj  <span class="glyphicon glyphicon-ok"></span></button>
     </form>
   </div>
 </div>

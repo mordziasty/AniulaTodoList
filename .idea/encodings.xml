@@ -4,8 +4,10 @@
     <file url="file://$PROJECT_DIR$/app/css/style.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/app.mdl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/app.rout.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/common/services/time-data.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/common/services/todos-data.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/core/default/default.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/core/edit/edit-ctrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/core/edit/edit.tpl.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/core/list/list.tpl.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/index-ctrl.js" charset="UTF-8" />
