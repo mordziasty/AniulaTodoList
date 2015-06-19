@@ -6,7 +6,7 @@ app.controller('editCtrl', function ($scope, $location, categories) {
 
   $scope.addTodo = function () {
     $scope.$parent.todos.push({
-      'title:': $scope.formData.newTodo,
+      'title': $scope.formData.newTodo,
       'done': false,
       'type': $scope.formData.type,
       'estimates': $scope.formData.estimates,
