@@ -16,3 +16,4 @@ app.controller('editCtrl', function ($scope, $location, categories) {
     $location.path('/list');
   };
 });
+

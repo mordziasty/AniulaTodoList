@@ -4,4 +4,15 @@ app.controller('listCtrl', function ($scope) {
       return !item.done;
     });
   };
+  var fixHelper = function(e, ui) {
+    ui.children().each(function() {
+      $(this).width($(this).width());
+    });
+    return ui;
+  };
+
+  $("#sort").find("tbody").sortable({
+    helper: fixHelper
+  }).disableSelection();
+
 });
